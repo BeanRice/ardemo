@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAR体验</title>
+    <!-- 引入A-Frame.js和AR.js的库 -->
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+    <!-- 创建一个场景 -->
+    <!-- arjs:表明这是一个AR场景 -->
+    <!-- embedded:表示这是一个嵌入式场景 -->
+    <a-scene arjs embedded>
+
+        <!-- 触发印记以后显示的内容 -->
+        <a-text value="Hello AR" color="red" rotation="-90 0 0"></a-text>
+
+        <!-- 创建一个触发增强的印记 -->
+        <a-marker-camera preset="hiro"></a-marker-camera>
+    </a-scene>
+</body>
+</html>
