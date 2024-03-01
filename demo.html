@@ -19,7 +19,10 @@
         <!-- <a-text value="今天天气不错" color="blue" rotation="-90 0 0"></a-text> -->
 
         <!-- 显示图片 -->
-        <a-image src="assets/show.jpg" rotation="-90 0 0"></a-image>
+        <!-- <a-image src="assets/show.jpg" rotation="-90 0 0"></a-image> -->
+
+        <!-- 显示3D模型 gltf -->
+        <a-etity gltf-model="assets/models/cartoon-gltf/scene.gltf" position="0 1 0" animation="property: rotation; to: 0 360 0; dur: 3000; easing: linear; loop: true"></a-etity>
 
         <!-- 创建一个触发增强的印记 -->
         <a-marker-camera preset="hiro"></a-marker-camera>
